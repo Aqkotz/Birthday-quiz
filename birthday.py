@@ -57,7 +57,7 @@ else:
         print ("You were born on Halloween!")
     if birthyear < 1989 and birthyear > 1980:
         print ("you were a " + birthseason + " baby of the eighties")
-     if birthyear < 1999 and birthyear > 1990:
+    if birthyear < 1999 and birthyear > 1990:
         print ("you were a " + birthseason + " baby of the nineties")
     if birthyear < 2009 and birthyear > 2000:
         print ("you were a " + birthseason + " baby of the new milenium")
