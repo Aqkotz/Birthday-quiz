@@ -35,13 +35,13 @@ name = input("Hello, what is your name? ")
 birthmonth = input("Hi " + name + ", what was the name of the month you were born in? ")
 birthyear = input("And what year were you born in, " + name + "? ")
 birthday = input("And the day? ")
-leapyear = input("Is it a leapyear? ")
+#leapyear = input("Is it a leapyear? ")
 
 birthyear = int(birthyear)
 birthday = int(birthday)
-print ("")
-if leapyear not in ["Yes", "yes", "no", "No"]:
-    print ("Not a valid response for 'is it a leapyear.'")
+#print ("")
+#if leapyear not in ["Yes", "yes", "no", "No"]:
+    #print ("Not a valid response for 'is it a leapyear.'")
 else:
     if birthmonth not in ["january", "January", "february", "February", "march", "March", "april", "April", "may", "May", "june", "June", "july", "July", "august", "August", "september", "September", "october", "October", "november", "November", "december", "December", "Janember"]:
         print ("Sorry, " + birthmonth + " is not a real month.")
