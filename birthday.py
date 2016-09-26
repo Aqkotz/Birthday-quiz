@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Andy
-Credit: None
+Credit: Keezy Keez
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -37,13 +37,14 @@ birthyear = input("And what year were you born in, " + name + "? ")
 birthday = input("And the day? ")
 if birthmonth in ["february", "February"]:
     leapyear = input("Is it a leapyear? ")
-
-birthyear = int(birthyear)
-birthday = int(birthday)
-print ("")
-if leapyear not in ["Yes", "yes", "no", "No"]:
-    print ("Not a valid response for 'is it a leapyear.'")
+    if leapyear not in ["Yes", "yes", "no", "No"]:
+        print ("Not a valid response for 'is it a leapyear.'")
+    
 else:
+    birthyear = int(birthyear)
+    birthday = int(birthday)
+    print ("")
+
     if birthmonth not in ["january", "January", "february", "February", "march", "March", "april", "April", "may", "May", "june", "June", "july", "July", "august", "August", "september", "September", "october", "October", "november", "November", "december", "December", "Janember"]:
         print ("Sorry, " + birthmonth + " is not a real month.")
         if birthmonth in ["september", "September", "april", "April", "june", "June", "november", "November"]:
@@ -56,22 +57,20 @@ else:
             birthmonthlength = 29
         if birthday > birthmonthlength:
             print ("that is not a valid input for 'And the day?'")
-    
+
     else:
         print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
     
-        if birthmonth == "january" or "January" or "february" or "February" or "december" or "December":
+        if birthmonth in ["january", "January", "february", "February", "december", "December"]:
             birthseason = ("winter")
-        if birthmonth == "march" or "March" or "april" or "April" or "may" or "May":
+        if birthmonth in ["march", "March", "april", "April", "may", "May"]:
             birthseason = ("spring")
-        if birthmonth == "june" or "June" or "july" or "July" or "august" or "August":
+        if birthmonth in ["june", "June", "july", "July", "august", "August"]:
             birthseason = ("summer")
-        if birthmonth == "september" or "September" or "october" or "October" or "november" or "November":
+        if birthmonth in ["september", "September", "october", "October", "november", "November"]:
             birthseason = ("fall")
         if birthmonth == "Janember":
             birthseason = ("stupid")
-        if birthday == 31 and (birthmonth == "october" or birthmonth == "October"):
-            print ("You were born on Halloween!")
         if birthyear < 1989 and birthyear > 1980:
             print ("you were a " + birthseason + " baby of the eighties")
         if birthyear < 1999 and birthyear > 1990:
@@ -88,4 +87,3 @@ else:
             print ("you were a " + birthseason + " baby of the nineties")
         if birthday == 31 and birthmonth in ["october", "October"]:
             print ("your birthday is halloween!")
-
