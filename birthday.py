@@ -59,7 +59,7 @@ else:
             print ("that is not a valid input for 'And the day?'")
 
     else:
-        print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
+        #print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
     
         if birthmonth in ["january", "January", "february", "February", "december", "December"]:
             birthseason = ("winter")
