@@ -60,7 +60,8 @@ else:
 
     else:
         #print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
-    
+        if birthday == 31 and birthmonth in ["october", "October"]:
+            print ("your birthday is halloween!")
         if birthmonth in ["january", "January", "february", "February", "december", "December"]:
             birthseason = ("winter")
         if birthmonth in ["march", "March", "april", "April", "may", "May"]:
@@ -83,5 +84,3 @@ else:
             print ("you are a " + birthseason + " baby of the seventies")
         if birthyear < 1969:
             print ("you are a " + birthseason + " baby of the stone age")
-        if birthday == 31 and birthmonth in ["october", "October"]:
-            print ("your birthday is halloween!")
