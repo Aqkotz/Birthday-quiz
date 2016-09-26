@@ -72,18 +72,16 @@ else:
         if birthmonth == "Janember":
             birthseason = ("stupid")
         if birthyear < 1989 and birthyear > 1980:
-            print ("you were a " + birthseason + " baby of the eighties")
+            print ("you are a " + birthseason + " baby of the eighties")
         if birthyear < 1999 and birthyear > 1990:
-            print ("you were a " + birthseason + " baby of the nineties")
+            print ("you are a " + birthseason + " baby of the nineties")
         if birthyear < 2013 and birthyear > 2000:
-            print ("you were a " + birthseason + " baby of the two thousands")
+            print ("you are a " + birthseason + " baby of the two thousands")
         if birthyear < 2016 and birthyear > 2014:
-            print ("you were a " + birthseason + " baby, and also an infant")
+            print ("you are a " + birthseason + " baby, and also an infant")
         if birthyear < 1979 and birthyear > 1970:
-            print ("you were a " + birthseason + " baby of the seventies")
-        if birthyear < 1969 and birthyear > 1960:
-            print ("you were a " + birthseason + " baby of the sixties")
-        if birthyear < 1959 and birthyear > 1950:
-            print ("you were a " + birthseason + " baby of the nineties")
+            print ("you are a " + birthseason + " baby of the seventies")
+        if birthyear < 1969:
+            print ("you are a " + birthseason + " baby of the stone age")
         if birthday == 31 and birthmonth in ["october", "October"]:
             print ("your birthday is halloween!")
