@@ -70,7 +70,7 @@ else:
         else:
             #print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
             if birthday == 31 and birthmonth in ["october", "October"]:
-                print ("your birthday is halloween!")
+                print ("You were born on Halloween!")
             else:
                 if birthday == 26 and birthmonth in ["September", "september"]:
                     print ("Happy Birthday!")
