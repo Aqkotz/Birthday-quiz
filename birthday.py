@@ -31,6 +31,11 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
 name = input("Hello, what is your name? ")
 birthmonth = input("Hi " + name + ", what was the name of the month you were born in? ")
 birthyear = input("And what year were you born in, " + name + "? ")
@@ -59,33 +64,37 @@ else:
             print ("that is not a valid input for 'And the day?'")
 
     else:
-        #print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
-        if birthday == 31 and birthmonth in ["october", "October"]:
-            print ("your birthday is halloween!")
+        month = month_name[todaymonth]
+        if month == birthmonth and todaydate == birthday:
+            print ("Happy birthday!")
         else:
-            if birthday == 26 and birthmonth in ["September", "september"]:
-                print ("Happy Birthday!")
+            #print ("Hi " + name + ", your birthday is " + birthmonth + " " + str(birthday) + ", " + str(birthyear) +".")
+            if birthday == 31 and birthmonth in ["october", "October"]:
+                print ("your birthday is halloween!")
             else:
-                if birthmonth in ["january", "January", "february", "February", "december", "December"]:
-                    birthseason = ("winter")
-                if birthmonth in ["march", "March", "april", "April", "may", "May"]:
-                    birthseason = ("spring")
-                if birthmonth in ["june", "June", "july", "July", "august", "August"]:
-                    birthseason = ("summer")
-                if birthmonth in ["september", "September", "october", "October", "november", "November"]:
-                    birthseason = ("fall")
-                if birthmonth == "Janember":
-                    birthseason = ("stupid")
-                if birthyear < 1989 and birthyear > 1980:
-                    print ("you are a " + birthseason + " baby of the eighties")
-                if birthyear < 1999 and birthyear > 1990:
-                    print ("you are a " + birthseason + " baby of the nineties")
-                if birthyear < 2013 and birthyear > 2000:
-                    print ("you are a " + birthseason + " baby of the two thousands")
-                if birthyear < 2016 and birthyear > 2014:
-                    print ("you are a " + birthseason + " baby, and also an infant")
-                if birthyear < 1979 and birthyear > 1970:
-                    print ("you are a " + birthseason + " baby of the seventies")
-                if birthyear < 1969:
-                    print ("you are a " + birthseason + " baby of the stone age")
+                if birthday == 26 and birthmonth in ["September", "september"]:
+                    print ("Happy Birthday!")
+                else:
+                    if birthmonth in ["january", "January", "february", "February", "december", "December"]:
+                        birthseason = ("winter")
+                    if birthmonth in ["march", "March", "april", "April", "may", "May"]:
+                        birthseason = ("spring")
+                    if birthmonth in ["june", "June", "july", "July", "august", "August"]:
+                        birthseason = ("summer")
+                    if birthmonth in ["september", "September", "october", "October", "november", "November"]:
+                        birthseason = ("fall")
+                    if birthmonth == "Janember":
+                        birthseason = ("stupid")
+                    if birthyear < 1989 and birthyear > 1980:
+                        print ("you are a " + birthseason + " baby of the eighties")
+                    if birthyear < 1999 and birthyear > 1990:
+                        print ("you are a " + birthseason + " baby of the nineties")
+                    if birthyear < 2013 and birthyear > 2000:
+                        print ("you are a " + birthseason + " baby of the two thousands")
+                    if birthyear < 2016 and birthyear > 2014:
+                        print ("you are a " + birthseason + " baby, and also an infant")
+                    if birthyear < 1979 and birthyear > 1970:
+                        print ("you are a " + birthseason + " baby of the seventies")
+                    if birthyear < 1969:
+                        print ("you are a " + birthseason + " baby of the stone age")
     
